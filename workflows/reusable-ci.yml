@@ -1,0 +1,26 @@
+name: Reusable CI
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: false
+        default: '20'
+        type: string
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint
+      - run: pnpm run test --if-present
+      - run: pnpm run build --if-present

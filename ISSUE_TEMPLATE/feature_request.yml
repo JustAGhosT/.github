@@ -1,0 +1,13 @@
+name: Feature Request
+description: Suggest an idea
+labels: enhancement
+body:
+- type: textarea
+  attributes:
+    label: Problem to solve
+- type: textarea
+  attributes:
+    label: Proposed solution / UX
+- type: textarea
+  attributes:
+    label: Alternatives

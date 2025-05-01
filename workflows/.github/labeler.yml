@@ -1,0 +1,9 @@
+frontend:
+  - 'vv-landing/**'
+  - 'vv-game-suite/apps/**'
+
+backend:
+  - 'vv-chain-services/**'
+
+docs:
+  - 'vv-docs/**'
