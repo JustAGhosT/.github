@@ -1,0 +1,6 @@
+{
+  "name": "CodeQL (Weekly)",
+  "description": "Weekly CodeQL scan - runs Monday 03:00 UTC only if main had commits that week. Manual trigger always available. Replaces default setup to avoid costly bot-triggered scans.",
+  "iconName": "octicon shield-check",
+  "categories": ["security"]
+}
